@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <title>view</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <header>
+        <h2>Page Visualizar</h2>
+        
+    </header>
+    
+    <section>
+        <div>
+            <h3>Employee Information</h3>  
+            <table>
+                <th>
+                   <td>Name</td>
+                   <td>Address</td>
+                   <td>city</td>
+                   <td>Pincode</td>
+                </th>
+                
+                {% for row in rows %}
+                   <tr scope="row">
+                      <td >{{ row['id'] }}</td>
+                      <td >{{ row['name'] }}</td>
+                      <td >{{ row['email'] }}</td>
+                      <td >{{ row['address'] }}</td>	
+                   </tr>
+                {% endfor %}
+             </table>
+                <br><br>  
+  
+<a href="/">Go back to index page</a>  
+            
+        </div>
+    </section>
+    <br>
+    <footer> 
+    <section>
+        <div id="repetir">
+            
+        </div>
+    </section>
+    </footer><br>
+
+    <footer>
+        
+    </footer>
+    
+    
+</body>
+</html>
